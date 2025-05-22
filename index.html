@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <script>
+        function handleCategoryClick(category) {
+            document.getElementById("category").innerHTML = category;
+        }
+
+        function toggleSubmenu(element) {
+            const submenu = element.nextElementSibling;
+            if (submenu.style.display === "none" || submenu.style.display === "") {
+                submenu.style.display = "block";
+            } else {
+                submenu.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header></header>
+    <h2>POST YOUR AD</h2>
+    <div class="container">
+        <h3>CHOOSE A CATEGORY</h3>
+        <div class="category">
+            <div class="category-item" onclick="toggleSubmenu(this)">
+                <h4>Cars</h4>
+            </div>
+            <ul class="submenu" style="display: none;">
+                <li>Cars</li>
+                
+            </ul>
+            <div class="category-item" onclick="toggleSubmenu(this)">
+                <h4>Properties</h4>
+            </div>
+            <ul class="submenu" style="display: none;">
+                <li>For Sale: Houses & Apartments</li>
+                <li>For Rent: Houses & Apartments</li>
+                <li>Lands & Plots</li>
+                <li>For Rent: Shops & Offices</li>
+                <li>For Sale: Shops & Offices</li>
+                <li>PG & Guest Houses</li>
+            </ul>
+            <div class="category-item" onclick="toggleSubmenu(this)">
+                <h4>Mobiles</h4>
+            </div>
+            <ul class="submenu" style="display: none;">
+                <li>Mobile Phones</li>
+                <li>Accessories</li>
+                <li>Tablets</li>
+            </ul>
+            <div class="category-item" onclick="toggleSubmenu(this)">
+                <h4>Jobs</h4>
+            </div>
+            <ul class="submenu" style="display: none;">
+                <li>Data entry & Back office</li>
+                <li>Sales & Marketing</li>
+                <li>BPO & Telecaller</li>
+                <li>Driver</li>
+                <li>Office Assistant</li>
+                <li>Delivery & Collection</li>
+                <li>Teacher</li>
+                <li>Cook</li>
+                <li>Receptionist & Front office</li>
+                <li>Operator & Technician</li>
+                <li>IT Engineer & Developer</li>
+                <li>Hotel & Travel Executive</li>
+                <li>Accountant</li>
+                <li>Designer</li>
+                <li>Other Jobs</li>
+            </ul>
+            <div class="category-item" onclick="toggleSubmenu(this)">
+                <h4>Bikes</h4>
+            </div>
+            <ul class="submenu" style="display: none;">
+                <li>Motorcycles</li>
+                <li>Scooters</li>
+                <li>Spare Parts</li>
+                <li>Bicycles</li>
+            </ul>
+            <div class="category-item" onclick="toggleSubmenu(this)">
+                <h4>Electronics & Appliances</h4>
+            </div>
+            <ul class="submenu" style="display: none;">
+                <li>TVs, Video - Audio</li>
+                <li>Kitchen & Other Appliances</li>
+                <li>Computers & Laptops</li>
+                <li>Cameras & Lenses</li>
+                <li>Games & Entertainment </li>
+                <li>Fridges</li>
+                <li>Computer Accessories</li>
+                <li>Hard Disks, Printers & Monitors</li>
+                <li>ACs</li>
+                <li>Washing Machines</li>
+            </ul>
+            <div class="category-item" onclick="toggleSubmenu(this)">
+                <h4>Commercial Vehicles & Spares</h4>
+            </div>
+            <ul class="submenu" style="display: none;">
+                <li>Commercial & Other Vehicles</li>
+                <li>Spare Parts</li>
+                
+            </ul>
+            <div class="category-item" onclick="toggleSubmenu(this)">
+                <h4>Furniture</h4>
+            </div>
+            <ul class="submenu" style="display: none;">
+                <li>Sofa & Dining</li>
+                <li>Beds & Wardrobes</li>
+                <li>Home Decor & Garden</li>
+                <li>Kids Furniture</li>
+                <li>Other Household Items</li>
+            </ul>
+            <div class="category-item" onclick="toggleSubmenu(this)">
+                <h4>Fashion</h4>
+            </div>
+            <ul class="submenu" style="display: none;">
+                <li>Men</li>
+                <li>Women</li>
+                <li>Kids</li>
+            </ul>
+            <div class="category-item" onclick="toggleSubmenu(this)">
+                <h4>Books, Sports & Hobbies</h4>
+            </div>
+            <ul class="submenu" style="display: none;">
+                <li>Books</li>
+                <li>Gym & Fitness </li>
+                <li>Musical Instruments</li>
+                <li>Sports Equipment</li>
+                <li>Other Hobbies</li>
+            </ul>
+            <div class="category-item" onclick="toggleSubmenu(this)">
+                <h4>Pets</h4>
+            </div>
+            <ul class="submenu" style="display: none;">
+                <li>Fishes & Aquarium</li>
+                <li>Pet Food & Accessories</li>
+                <li>Dogs</li>
+                <li>Other Pets </li>
+            </ul>
+            <div class="category-item" onclick="toggleSubmenu(this)">
+                <h4>Services</h4>
+            </div>
+            <ul class="submenu" style="display: none;">
+                <li>Education & Classes</li>
+                <li>Tours & Travel</li>
+                <li>Electronics Repair & Services</li>
+                <li>Health & Beauty</li>
+                <li>Home Renovation & Repair</li>
+                <li>Cleaning & Pest Control</li>
+                <li>Legal & Documentation Services</li>
+                <li>Packers & Movers</li>
+                <li>Other Services</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
